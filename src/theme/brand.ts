@@ -1,8 +1,10 @@
 export interface BrandColors {
   primary: string;
   secondary: string;
+  accent: string;
 }
 export const brandColors: BrandColors = {
-  primary: '#802928',
-  secondary: '#f69b9c',
+  primary: '#000000',
+  secondary: '#FFA500',
+  accent: '#FFD700',
 };

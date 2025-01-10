@@ -27,55 +27,28 @@ const themeOptions: ThemeOptions = {
     text: {
       primary: brandColors.primary,
       secondary: brandColors.primary,
-      disabled: '#9B5E5E',
-      hint: '#FFD6D7',
+      disabled: 'rgba(0, 0, 0, 0.38)',
+      hint: 'rgba(0, 0, 0, 0.38)',
     },
     primary: {
       main: brandColors.primary,
-      light: '#A56665',
-      dark: '#5A1D1C',
+      light: '#333333',
+      dark: '#000000',
     },
     secondary: {
       main: brandColors.secondary,
-      light: '#FFB6B8',
-      dark: '#C67F82',
-    },
-    success: {
-      main: '#4CAF50',
-      light: '#81C784',
-      dark: '#388E3C',
-    },
-    info: {
-      main: '#2196F3',
-      light: '#64B5F6',
-      dark: '#1976D2',
-    },
-    warning: {
-      main: '#FFC107',
-      light: '#FFD54F',
-      dark: '#FFA000',
-    },
-    error: {
-      main: '#F44336',
-      light: '#E57373',
-      dark: '#D32F2F',
-    },
-    danger: {
-      main: '#EE368C',
-    },
-    dark: {
-      main: '#260944',
+      light: brandColors.accent,
+      dark: '#FF8C00',
     },
     background: {
-      default: '#FFF4F4',
-      paper: '#FFECEC',
+      default: '#FFFFFF',
+      paper: '#FAFAFA',
     },
   } as PaletteOptions,
   typography: {
     fontSize: 12,
   } as TypographyOptions,
 };
-
 const theme: Theme = createTheme(themeOptions);
 
 export default theme;
