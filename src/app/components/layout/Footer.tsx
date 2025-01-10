@@ -27,7 +27,7 @@ const Footer: React.FC = () => {
           <Grid size={{ md: 3, xs: 12 }}>
             <Box sx={{ float: 'left' }}>
               <Image
-                src="/images/logo.webp"
+                src="/images/logo.png"
                 alt={`${AppData.name} Logo`}
                 width={150}
                 height={50}

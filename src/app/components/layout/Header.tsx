@@ -11,7 +11,7 @@ const Header = () => (
       <Box sx={styles.flexHeader}>
         <Link href="/" passHref>
           <Box sx={styles.logoContainer}>
-            <Image src="/images/logo.webp" alt="logo" width={200} height={60} />
+            <Image src="/images/logo.png" alt="logo" width={200} height={60} />
           </Box>
         </Link>
         <Box sx={styles.buttonContainer}>
