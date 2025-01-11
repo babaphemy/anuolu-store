@@ -38,14 +38,22 @@ const AppData = {
   ],
   footer: {
     message1:
-      'At Horace Online Learning, we are passionate about empowering individuals to achieve their full potential through education.',
+      'At Anuoluwa African Store, we are passionate about bringing authentic African and Caribbean groceries to your doorstep.',
     message2:
-      'We are dedicated to making high-quality learning accessible to all, regardless of their background or location.',
+      'We take pride in providing high-quality products and reliable services to connect you with the tastes of home.',
   },
   nav: [
     {
       name: 'Home',
       link: '/',
+    },
+    {
+      name: 'Services',
+      link: '/services',
+    },
+    {
+      name: 'Shop',
+      link: '/shop',
     },
     {
       name: 'About',

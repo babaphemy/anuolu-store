@@ -12,6 +12,7 @@ import {
   useTheme,
 } from '@mui/material';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
+import Link from 'next/link';
 
 const featuredCategories = [
   {
@@ -67,17 +68,19 @@ export default function Home() {
                 Bringing the flavors of Africa and the Caribbean to your
                 doorstep
               </Typography>
-              <Button
-                variant="contained"
-                size="large"
-                endIcon={<ArrowForwardIcon />}
-                sx={{
-                  bgcolor: 'warning.main',
-                  '&:hover': { bgcolor: 'warning.dark' },
-                }}
-              >
-                Shop Now
-              </Button>
+              <Link href={'/shop'}>
+                <Button
+                  variant="contained"
+                  size="large"
+                  endIcon={<ArrowForwardIcon />}
+                  sx={{
+                    bgcolor: 'warning.main',
+                    '&:hover': { bgcolor: 'warning.dark' },
+                  }}
+                >
+                  Shop Now
+                </Button>
+              </Link>
             </Grid>
             <Grid size={{ xs: 12, md: 6 }}>
               <Box
@@ -159,17 +162,20 @@ export default function Home() {
               and the Caribbean to ensure you get the most authentic ingredients
               for your favorite dishes.
             </Typography>
-            <Button
-              variant="contained"
-              size="large"
-              sx={{
-                mt: 2,
-                bgcolor: theme.palette.primary.main,
-                '&:hover': { bgcolor: theme.palette.primary.dark },
-              }}
-            >
-              View All Products
-            </Button>
+
+            <Link href={'/shop'}>
+              <Button
+                variant="contained"
+                size="large"
+                sx={{
+                  mt: 2,
+                  bgcolor: theme.palette.primary.main,
+                  '&:hover': { bgcolor: theme.palette.primary.dark },
+                }}
+              >
+                View All Products
+              </Button>
+            </Link>
           </Stack>
         </Container>
       </Box>
